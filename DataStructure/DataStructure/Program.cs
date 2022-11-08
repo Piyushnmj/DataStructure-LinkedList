@@ -9,8 +9,9 @@
             LinkedList objLinkedList = new LinkedList();
             objLinkedList.Add(56);
             objLinkedList.Add(36);
+            objLinkedList.Add(40);
             objLinkedList.Add(70);
-            objLinkedList.InsertBetween(40);
+            objLinkedList.RemoveAtPosition(3);
             objLinkedList.Display();
 
             Console.ReadLine();
