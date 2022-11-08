@@ -31,14 +31,14 @@ namespace DataStructure
 
         public void InsertBetween(int new_data)
         {
-            int position = 2;
+            int position = 3;
             Node objnew_Node = new Node(new_data);
             objnew_Node.data = new_data;
             objnew_Node.next = null;
 
             if (position < 1)
             {
-                Console.Write("\nposition should be >= 1.");
+                Console.Write("\nPosition should be >= 1");
             }
             else if (position == 1)
             {
