@@ -11,7 +11,6 @@
             objLinkedList.Add(36);
             objLinkedList.Add(70);
             objLinkedList.RemoveFirstNode();
-            //objLinkedList.InsertBetween(30);
             objLinkedList.Display();
 
             Console.ReadLine();
