@@ -138,6 +138,34 @@ namespace DataStructure
             }
         }
 
+        public void sortList()
+        { 
+            Node current = head; 
+            Node index = null;
+            if (head == null)
+            {
+                return;
+            }
+            else
+            {
+                while (current != null)
+                { 
+                    index = current.next;
+                    while (index != null)
+                    { 
+                        if (current.data > index.data)
+                        {
+                            int temp = current.data;
+                            current.data = index.data;
+                            index.data = temp;
+                        }
+                        index = index.next;
+                    }
+                    current = current.next;
+                }
+            }
+        }
+
         public Node Search(int value)
         {
             position = 1;
@@ -157,6 +185,7 @@ namespace DataStructure
 
         public void Display()
         {
+            int size = 0;
             Node temp = this.head;
             if (temp == null)
             {
@@ -168,7 +197,9 @@ namespace DataStructure
             {
                 Console.Write(temp.data + " ");
                 temp = temp.next;
+                size++;
             }
+            Console.WriteLine("\nSize of Linked List is: " + size);
         }
     }
 }

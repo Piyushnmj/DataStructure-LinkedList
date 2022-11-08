@@ -11,8 +11,10 @@
             objLinkedList.Add(36);
             objLinkedList.Add(40);
             objLinkedList.Add(70);
-            objLinkedList.RemoveAtPosition(3);
             objLinkedList.Display();
+            objLinkedList.sortList();
+            objLinkedList.Display();
+
 
             Console.ReadLine();
         }
