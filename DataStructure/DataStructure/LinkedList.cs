@@ -98,6 +98,23 @@ namespace DataStructure
             Console.WriteLine("\nRemoved Last Node");
         }
 
+        public Node Search(int value)
+        {
+            int position = 1;
+            Node headValue = this.head;
+            while (headValue != null)
+            {
+                if (headValue.data == value)
+                {
+                    Console.WriteLine($"\nInput {value} is at {position}");
+                    return headValue;
+                }
+                position++;
+                headValue = headValue.next;
+            }
+            return null;
+        }
+
         public void Display()
         {
             Node temp = this.head;

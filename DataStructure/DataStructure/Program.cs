@@ -10,7 +10,7 @@
             objLinkedList.Add(56);
             objLinkedList.Add(36);
             objLinkedList.Add(70);
-            objLinkedList.RemoveLastNode();
+            objLinkedList.Search(36);
             objLinkedList.Display();
 
             Console.ReadLine();
