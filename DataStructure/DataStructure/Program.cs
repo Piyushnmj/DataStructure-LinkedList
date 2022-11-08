@@ -10,7 +10,7 @@
             objLinkedList.Add(56);
             objLinkedList.Add(30);
             objLinkedList.Add(70);
-            objLinkedList.Display();
+            objLinkedList.Display(); // 56 30 70
 
             Console.ReadLine();
         }
