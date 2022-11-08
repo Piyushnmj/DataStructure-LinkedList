@@ -155,23 +155,6 @@ namespace DataStructure
             return null;
         }
 
-        //public Node RemoveBetween(int data)
-        //{
-        //    position = 1;
-        //    Node headValue = this.head;
-        //    while (headValue != null)
-        //    {
-        //        if (headValue.data == data)
-        //        {
-        //            Console.WriteLine($"\nInput {data} is at position {position}");
-        //            return headValue;
-        //        }
-        //        position++;
-        //        headValue = headValue.next;
-        //    }
-        //    return null;
-        //}
-
         public void Display()
         {
             Node temp = this.head;
